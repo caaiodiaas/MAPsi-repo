@@ -21,6 +21,22 @@ The elements presented in the database figure refer to the following parts:
   
 From these connections, it is visible that there are many "one-to-many" relationships in the model, with some exceptions in which the relationship must be "many-to-many" and the existence of an auxiliary entity is necessary to implement this relationship, as in list of programs and collaborators (“tb_program” and “tb_skill”), in which the entity "tb_skill_program" is responsible for storing the identifiers of both, enabling this relationship.
 
+## Package architecture
+
+![packages](assets/package.png)
+
+For the [Frontend] subsystem:
+- The [Assets] subpackage contains the images used in the interface, such as the system logo.
+- In the [Components] subpackage are interface elements or components that are replicated on one or more screens, such as buttons or text boxes.
+- The [Pages] subpackage contains the implementations of the pages to be displayed, as well as the structure in which they are organized.
+- The [Services] subpackage contains the codes responsible for direct communication with the backend API.
+- The [Styles] subpackage contains the CSS files responsible for styling the interface elements.
+- The [Utils] subpackage implements auxiliary functions that are visible to the entire program.
+  
+For the [Backend] subsystem:
+- In the [API] subpackage there are the packages: [Controllers], composed of elements responsible for receiving and handling frontend requests; [DTO], also known as data transfer objects, composed of elements that determine the structure of the entities that will be shared with the frontend or database; [Security], composed of elements responsible for the security of the application, such as password encryption.
+- In the [Model] subpackage there are the following packages: [Entities], composed of elements that represent the project's model entities, together with their attributes and relationships; [Repositories], composed of elements called repositories that will indicate which functions the services will have;[Services], composed of elements called services that are responsible for defining the functions indicated by the repositories, it is in these functions that the project's business rules are implemented, for example the removal of a protocol culminates in the removal of all its abilities.
+
 ## TAM questions
 
 Below are the questions asked for evaluation by the Technology Acceptance Model
