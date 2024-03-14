@@ -23,7 +23,7 @@ From these connections, it is visible that there are many "one-to-many" relation
 
 ## Package architecture
 
-![packages](assets/package.png)
+![packages](assets/packages.png)
 
 For the [Frontend] subsystem:
 - The [Assets] subpackage contains the images used in the interface, such as the system logo.
