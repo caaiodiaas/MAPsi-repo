@@ -92,3 +92,49 @@ Regarding the MAPsi system
 - In general, the system will be useful for the company's functionalities:
 - In general, the use of the system is:
 - In general, learning how to use the system is:
+
+# Interface
+
+## Patient interface
+
+Regarding patients, it is possible to list, register and remove them from the system. To register patients, the software requests the following data: full name, date of birth, full name of two guardians, then it must register the patient in the database. Only a supervisor has the ability to add, change or remove patients from the system.
+
+![patients](assets/patients.png)
+
+## Protocol interface
+
+As for protocols, the software allows the registration of protocols which, in turn, must have a name and a set of skills with the elements presented in figure bellow. code (to reference the skill), skill (skill title), task ( necessary action), objective, example and evaluation criteria (indicating the grade values ​​for certain results). Only a supervisor has the ability to add, change, or remove protocols and skills from the system.
+
+![protocols](assets/protocols.png)
+
+## Program interface
+
+When dealing with programs, the software makes it possible to register and change programs for a patient. The programs contain all patient data, the name of the supervisor, the name(s) of the collaborator(s) responsible for that patient, the date on which the program was created, the deadline for that program (in months) and the selected skill codes, as well as the description of each selected skill. Only a supervisor has the ability to add, change, or remove programs from the software.
+
+![programs](assets/programs.png)
+
+## Evaluation Interface
+
+The system allows employees or supervisors to record the results for each skill that the patient performs with values ​​according to the description of the skill evaluation criteria. Assessments contain a list of all skills in the program, as well as grades and descriptions that can be assigned to each skill.
+
+![evaluation](assets/evaluations.png)
+
+## Supervisor/Collaborator Interface
+
+The interfaces for employees and supervisors are similar, requiring the same data for registration. This way, the software allows supervisors to register, providing their full name, email, CPF number and password. Only the software administrator user or another supervisor is able to register or change a supervisor's data.
+
+Only a supervisor has the ability to add, change, or remove supervisors from the system. Furthermore, a supervisor can register employees, providing their full name, CPF number, email and password, or remove an existing employee. Changing an employee's data can be done by the employee or by the supervisor. It is observed that the system requires authentication for access from a login screen that requires email and password from a supervisor or employee already registered to access it.
+
+![sup_colab](assets/sup_colab.png)
+
+## PDF generation
+
+Collaborators have access to the programs in which they were linked, allowing them to view all their content. They can also register new assessments and download the program in PDF format. The downloaded program presents all the details and descriptions of all the skills registered in it.
+
+![pdf](assets/pdf.png)
+
+## Mobile interface
+
+MAPsi has responsiveness in its graphic elements to adapt to the most varied screen sizes, but in addition all screens have a dedicated interface for mobile devices, with changes in the graphic structure of the elements to facilitate use on touch screens.
+
+![mobile](assets/mobile.png)
