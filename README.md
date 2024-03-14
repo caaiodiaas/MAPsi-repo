@@ -2,6 +2,17 @@
 
 Repository of elements relating to the MAPsi project
 
+## Summary
+
+1. **Database**
+   - Overview of the database structure including entities, relationships, and attributes.
+2. **Package Architecture**
+   - Description of the frontend and backend package structure detailing their respective components and functionalities.
+3. **TAM Questions**
+   - Evaluation questions based on the Technology Acceptance Model pertaining to different functionalities of the MAPsi system.
+4. **Interface**
+   - Detailed descriptions and visual representations of various interfaces within the MAPsi system including patient, protocol, program, evaluation, supervisor/collaborator, PDF generation, and mobile interfaces.
+
 ## Database
 
 The figure below presents a diagram with all project entities, as well as their relationships, attributes and attribute types.
